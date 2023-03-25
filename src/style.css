@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .swiper-slide {
+    @apply transition duration-500;
+  }
+  .swiper-slide-active {
+    @apply z-10 translate-x-0
+  }
+  .swiper-slide-prev,
+  .swiper-slide-next{
+    @apply !scale-75 blur-sm;
+  }
+  .swiper-slide-prev {
+    @apply !translate-x-3/4;
+  }
+  .swiper-slide-next {
+    @apply !-translate-x-3/4;
+  }
+}
